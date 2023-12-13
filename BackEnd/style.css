@@ -1,0 +1,266 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS',  helvetica, sans-serif;
+  background-image:url('Images/bg5.jpg');
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+header{
+  padding-top: 40px;
+}
+h1{
+  text-align: center;
+  color: gold;
+  margin-left: 50px;
+  padding-top: 0;
+}
+.p1{
+  font-size: 24px;
+  color: gold;
+}
+.p2{
+  font-size: 16px;
+  color: black;
+
+}
+.watch-button {
+  background-color: gold; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.watch-button-fagri{
+    background-color: black; /* Green */
+    border: none;
+    color: gold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+}
+#navbar {
+  overflow: hidden;
+background-color: #333; /* Black background color */
+position: fixed; /* Make it stick/fixed */
+top: 0; /* Stay on top */
+width: 100%; /* Full width */
+transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+float: left;
+display: block;
+color: gold;
+text-align: center;
+padding: 15px;
+padding-left: 20px;
+padding-right: 20px;
+text-decoration: none;
+}
+
+#navbar a:hover {
+background-color: gold;
+color: black;
+}
+section{
+margin: auto;
+}
+
+
+
+
+
+
+
+.left-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.container {
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 50vh;
+  
+}
+
+.featured-title {
+  height: 450px;
+  
+
+}
+
+.featured-desc {
+  width: 500px;
+  font-size: 32px;
+  color:black ;
+  margin: 30px 0;
+  padding-left: 20px;
+}
+
+.featured-button {
+  background-color: gold;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.movie-list-container {
+  padding: 0 20px;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  color: gold;
+  padding: 0 10px;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc {
+  color: gold;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.movie-table{
+  width: 700px;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+td{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.movie-table-tr{
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+.movie-list-item-button {
+  padding: 10px;
+  background-color: gold;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container.active {
+  background-color: white;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
